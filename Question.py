@@ -9,7 +9,7 @@ root.config(bg="lightblue")
 
 # Functions 
 def my_click():
-    clicked_label = Label(button_frame, text='You said it!', bg='lightblue', font=('Helvetica', 60), fg='pink')
+    clicked_label = Label(button_frame, text='Well, if you say so.', bg='lightblue', font=('Helvetica', 60), fg='red')
     clicked_label.pack() 
     yes_button.config(state=DISABLED)
 
@@ -23,15 +23,15 @@ def move_button(event):
         
 # The constituents 
 
-my_label = Label(root, text="Are you gay??", bg="lightblue", font=("Helvetica", 40), fg='black')
+my_label = Label(root, text="What is 2x2?", bg="lightblue", font=("Helvetica", 40), fg='black')
 
 
 button_frame = Frame(root, bg='lightblue')
 button_frame.config(width=800, height=800)
 
 
-yes_button = Button(button_frame, bg='green', text="YES", padx=20, pady=3, font=("Arial", 20), command=my_click, fg='green')
-no_button = Button(button_frame, text='NO', padx=23, pady=3, font=("Arial", 20), fg='red')
+yes_button = Button(button_frame, bg='green', text="Five", padx=20, pady=3, font=("Arial", 20), command=my_click, fg='red')
+no_button = Button(button_frame, text='Four', padx=23, pady=3, font=("Arial", 20), fg='green')
 
 # placing buttons in the frame 
 
